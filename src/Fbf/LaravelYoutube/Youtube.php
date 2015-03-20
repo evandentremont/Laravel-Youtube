@@ -29,8 +29,8 @@ class Youtube {
 		$this->client->setScopes(\Config::get('laravel-youtube::scopes'));
 		$this->client->setAccessType(\Config::get('laravel-youtube::access_type'));
 		$this->client->setApprovalPrompt(\Config::get('laravel-youtube::approval_prompt'));
-		$this->client->setRedirectUri(\URL::to(\Config::get('laravel-youtube::redirect_uri')));
-		$this->client->setClassConfig('Google_Http_Request', 'disable_gzip', true);		
+		$this->client->setRedirectUri(\URL::to(\Config::get('laravel-youtube::redirect_uri')), array(), \Config::get('laravel-youtube::secure')));
+		$this->client->setClassConfig('Google_Http_Request', 'disable_gzip', true);
 		$this->youtube = new \Google_Service_YouTube($this->client);
 		$accessToken = $this->getLatestAccessTokenFromDB();
 		if ($accessToken)
@@ -72,7 +72,7 @@ class Youtube {
 				->where('user_id', \Auth::user()->id)
 				->orderBy('created_at', 'desc')->first();
 		}
-		
+
 		if ($latest)
 		{
 			return $latest->access_token;
@@ -81,7 +81,7 @@ class Youtube {
 	}
 
 	/*
-	 * Return JSON response of uploaded videos 
+	 * Return JSON response of uploaded videos
 	 * @return json
 	 */
 	public function getUploads($maxResults=50)
@@ -100,7 +100,7 @@ class Youtube {
 																								));
 
 			$items = [];
-			foreach ($playlistItemsResponse['items'] as $playlistItem) 
+			foreach ($playlistItemsResponse['items'] as $playlistItem)
 			{
 				$video = [];
 				$video['videoId'] 		= $playlistItem['snippet']['resourceId']['videoId'];

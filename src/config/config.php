@@ -40,16 +40,19 @@ return array(
 	'approval_prompt' => 'auto',
 
 	/**
-	 * Table name for Accestokens 
+	 * Table name for Accestokens
 	 */
 	'table_name' => 'fbf_youtube_access_token',
 
-	/** 
-	 * Save and access the authentication tokens based on the Authenticated user. 
+	/**
+	 * Save and access the authentication tokens based on the Authenticated user.
 	 * Preferable when your system makes use of multiple users with Laravels authentication
 	 */
 	'auth' => false,
 
+	/**
+	 * HTTPS true/false
+	 */
+	'https' => true,
+
 );
-
-
