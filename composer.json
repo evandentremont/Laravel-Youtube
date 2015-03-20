@@ -1,11 +1,10 @@
 {
     "name": "evandentremont/laravel-youtube",
-    "description": "A Laravel package to upload videos to a YouTube 
-channel. Fork of package by FiveByFive that appears unmaintained.",
+    "description": "A Laravel package to upload videos to a YouTube channel. Fork of package by FiveByFive that appears unmaintained.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Evan d'Entremont",
+            "name": "Evan d\'Entremont",
             "email": "evan@evandentremont.com"
         }
     ],
