@@ -32,6 +32,18 @@ Add the following to you composer.json file
 
     "fbf/laravel-youtube": "dev-master"
 
+Change
+
+    "minimum-stability": "stable"
+    
+To
+
+    "minimum-stability": "dev"
+
+Add
+
+    "prefer-stable": true
+
 Run
 
     composer update
