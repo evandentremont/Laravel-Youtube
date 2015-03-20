@@ -2,9 +2,6 @@ Laravel-Youtube
 ===============
 
 Forked by Evan d'Entremont
-Todo: Add HTTPS support (among other things)
-
-
 
 A Laravel package to upload videos to a YouTube channel and get a list of uploaded videos
 

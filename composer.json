@@ -1,11 +1,12 @@
 {
-    "name": "fbf/laravel-youtube",
-    "description": "A Laravel package to upload videos to a YouTube channel",
+    "name": "evandentremont/laravel-youtube",
+    "description": "A Laravel package to upload videos to a YouTube 
+channel. Fork of package by FiveByFive that appears unmaintained.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Neil Crookes",
-            "email": "neil.crookes@fivebyfiveuk.com"
+            "name": "Evan d'Entremont",
+            "email": "evan@evandentremont.com"
         }
     ],
     "require": {
