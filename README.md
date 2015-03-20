@@ -1,6 +1,11 @@
 Laravel-Youtube
 ===============
 
+Forked by Evan d'Entremont
+Todo: Add HTTPS support (among other things)
+
+
+
 A Laravel package to upload videos to a YouTube channel and get a list of uploaded videos
 
 It is intended for use in a website where users can upload a video file which is then uploaded to a single Youtube
